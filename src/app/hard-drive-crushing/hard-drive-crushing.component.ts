@@ -1,6 +1,5 @@
 import { Component, OnInit, AfterContentInit } from '@angular/core';
 import { faHdd, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
-import { delay } from 'q';
 
 @Component({
   selector: 'app-hard-drive-crushing',
