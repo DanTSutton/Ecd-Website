@@ -1,0 +1,59 @@
+$ecd-green: #007427;
+
+
+.spinner-padding {
+  z-index: 1000;
+  padding-top: 63px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+mat-card-title {
+  color: $ecd-green;
+  font-family: "open sans",sans-serif;
+  font-weight: bold;
+}
+
+.school-picture {
+  width: 85%;
+}
+
+.recycling-background {
+    background-image: url('/assets/cr-background.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100vw;
+    height: 80vh;
+  }
+
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .centered {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: white;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+  }
+
+  .recycling-icon {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: white;
+  }
+
+  .sub-header {
+    color: rgb(98, 98, 98);
+    font-weight: lighter;
+    font-size: 1.24rem;
+  }

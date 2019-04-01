@@ -1,0 +1,92 @@
+$ecd-green: #007427;
+$ecd-light-grey: rgb(248, 248, 248);
+$ecd-footer: #333;
+
+
+.spinner-padding {
+  z-index: 1000;
+  padding-top: 63px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.centered {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: white;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+  }
+
+  
+  .recycling-icon {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: white;
+  }
+
+  .sub-header {
+    color: rgb(98, 98, 98);
+    font-weight: lighter;
+    font-size: 1.24rem;
+  }
+
+  .collection-item-header {
+    background: $ecd-green;
+    border-radius: 10px 10px 0 0;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    border: solid 1px rgb(195, 195, 195);
+  }
+
+  .collection-item {
+    background: white;
+    text-align: center;
+    border-left: solid 1px rgb(195, 195, 195);
+    border-right: solid 1px rgb(195, 195, 195);
+    border-bottom: solid 1px rgb(195, 195, 195);
+
+  }
+
+  .collection-item-icon  {
+    color: $ecd-green;
+    font-size: 2rem;
+  }
+
+  .not-available-icon  {
+    color: rgb(207, 21, 21);
+    font-size: 2rem;
+  }
+
+  .steps-icon  {
+    color: $ecd-green;
+    font-size: 3rem;
+  }
+
+
+
+.items-header {
+  color: white;
+  font-family: "open sans",sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding-top: 5px;
+}
+
+.items-sub-header-light {
+    color: rgb(173, 173, 173);
+    font-weight: lighter;
+    font-size: 1.24rem;
+  }
+
+  .items-sub-header {
+    color: rgb(98, 98, 98);
+    font-weight: lighter;
+    font-size: 1.24rem;
+  }

@@ -1,0 +1,366 @@
+<ng-container>
+    <!-- Progress Bar -->
+    <div *ngIf="!isLoading" class="container-fluid pt-4 ">
+        <div class="row">
+            <div class="col-12 spinner-padding">
+                <mat-progress-bar mode="{{this.mode}}"></mat-progress-bar>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div *ngIf="isLoading" class="animated fadeIn">
+        <div class="container-fluid pt-4">
+            <div class="row pt-5 text-center">
+                <!-- Header Image -->
+                <img class="img-fluid" src="assets/header-image.jpg" alt="Snow">
+                <!-- Main Title -->
+                <span class="animated fadeIn main-image-text ">Book your FREE Computer Recycling Collection
+                    today...</span>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 pt-5 text-center">
+                    <h2 class="section-heading">Our Services</h2>
+                </div>
+            </div>
+
+            <div class="row pb-3">
+                <div class="col-12 col-lg-4 pb-5 text-center">
+                    <mat-card class="example-card">
+                        <div>
+                            <h3 class="card-title">Computer Recycling</h3>
+                            <h6 class="card-subtitle">Free Collections Available</h6>
+                        </div>
+                        <img mat-card-image src="assets/recycling.jpg" alt="Photo of a Shiba Inu">
+                        <mat-card-content>
+                            <p>
+                                Count your items! If you are eligible, we can provide a FREE Recycling Service.
+                                Every collection comes with a Waste Transfer Note.
+                            </p>
+                            <hr />
+                            <button mat-raised-button class="m-2 more-info-button"
+                                [routerLink]="['/computer-recycling']" routerLinkActive="router-link-active">More
+                                Information
+                                <fa-icon class="mr 2" [icon]="faAngleDoubleRight"></fa-icon>
+                            </button>
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+                <div class="col-12 col-lg-4 pb-5 text-center">
+                    <mat-card class="example-card">
+                        <div>
+                            <h3 class="card-title">Offsite Data Destruction</h3>
+                            <h6 class="card-subtitle">Complimentary & Premium Services Available</h6>
+                        </div>
+                        <img mat-card-image src="assets/wiping.jpg" alt="Photo of a Shiba Inu">
+                        <mat-card-content>
+                            <p>
+                                If you have sensitive data on your hard drives, good news...
+                                We provide a complimentaty data wiping service with our collections.
+                            </p>
+                            <hr />
+                            <button mat-raised-button class="m-2 more-info-button" [routerLink]="['/offsite-wiping']"
+                                routerLinkActive="router-link-active">
+                                More Information
+                                <fa-icon class="mr 2" [icon]="faAngleDoubleRight"></fa-icon>
+                            </button>
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+                <div class="col-12 col-lg-4 pb-5 text-center">
+                    <mat-card class="example-card">
+                        <div>
+                            <h3 class="card-title">Onsite Data Destruction</h3>
+                            <h6 class="card-subtitle">Prices start from £3.99 per drive</h6>
+                        </div>
+                        <img mat-card-image src="assets/destruction.jpg" alt="Photo of a Shiba Inu">
+                        <mat-card-content>
+                            <p>
+                                Do you require a greater peace of mind for your data destruction needs?
+                                We also provide an Onsite Hard Drive Crushing Service at £3.99 per drive.
+                            </p>
+                            <hr />
+                            <button mat-raised-button class="m-2 more-info-button" [routerLink]="['/onsite-crushing']"
+                                routerLinkActive="router-link-active">
+
+                                More Information
+                                <fa-icon class="mr 2" [icon]="faAngleDoubleRight"></fa-icon>
+                            </button>
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+            </div>
+        </div>
+
+        <!-- What we collection section-->
+        <div class="container-fluid what-we-collection">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-center mt-5 mb-5">
+                            <h2 class="section-heading">What Do We Collect?</h2>
+                        </div>
+                        <div class="text-center mt-5 mb-5">
+                            <h6 class="items-sub-header">We aim to provide <strong>FREE Recycling</strong> each time, to
+                                be
+                                able to provide this service, we require a <strong>minimum of 20 Main items.</strong>
+                                <br /><br /> If you have an item that isn't listed below, please contact us.</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- Main Items -->
+                    <div class="col-12 col-md-6 pb-5">
+                        <div class="collection-item-header">
+                            <h4 class="items-header">Main Items
+                            </h4>
+                        </div>
+                        <div class="collection-item">
+                            <div class="text-center p-3">
+                                <fa-icon class="collection-item-icon" [icon]="faMicrochip"></fa-icon>
+                                <h5 class="items-sub-header">Computers</h5>
+                            </div>
+                        </div>
+                        <div class="collection-item">
+                            <div class="text-center p-3">
+                                <h5 class="items-sub-header">LCD Monitors
+                                </h5>
+                                <fa-icon class="collection-item-icon" [icon]="faTv"></fa-icon>
+                            </div>
+                        </div>
+                        <div class="collection-item">
+                            <div class="text-center p-3">
+                                <h5 class="items-sub-header">Laptops</h5>
+                                <fa-icon class="collection-item-icon" [icon]="faLaptop"></fa-icon>
+                            </div>
+                        </div>
+                        <div class="collection-item">
+                            <div class="text-center p-3">
+                                <h5 class="items-sub-header">Servers</h5>
+                                <fa-icon class="collection-item-icon" [icon]="faServer"></fa-icon>
+                            </div>
+                        </div>
+                        <div class="collection-item">
+                            <div class="text-center p-3">
+                                <h5 class="items-sub-header">Tablets</h5>
+                                <fa-icon class="collection-item-icon" [icon]="faTablet"></fa-icon>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sub Items -->
+                    <div class="col-12 col-md-6 pb-5">
+                        <div class="collection-item-header">
+                            <h4 class="items-header">Sub Items
+                            </h4>
+                        </div>
+                        <div class="collection-item">
+                            <div class="text-center p-3">
+                                <h5 class="items-sub-header">Keyboards</h5>
+                                <fa-icon class="collection-item-icon" [icon]="faKeyboard"></fa-icon>
+                            </div>
+                        </div>
+                        <div class="collection-item">
+                            <div class="text-center p-3">
+                                <h5 class="items-sub-header">Mice
+                                </h5>
+                                <fa-icon class="collection-item-icon" [icon]="faMousePointer"></fa-icon>
+                            </div>
+                        </div>
+                        <div class="collection-item">
+                            <div class="text-center p-3">
+                                <h5 class="items-sub-header">Cables</h5>
+                                <fa-icon class="collection-item-icon" [icon]="faPlug"></fa-icon>
+                            </div>
+                        </div>
+                        <div class="collection-item">
+                            <div class="text-center p-3">
+                                <h5 class="items-sub-header">Switches</h5>
+                                <fa-icon class="collection-item-icon" [icon]="faEthernet"></fa-icon>
+                            </div>
+                        </div>
+                        <div class="collection-item">
+                            <div class="text-center p-3">
+                                <h5 class="items-sub-header">Projectors</h5>
+                                <fa-icon class="collection-item-icon" [icon]="faUpload"></fa-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-center mt-2 mb-5">
+                            <h6 class="items-sub-header">If you don't have 20 Main items but still require a Recycling
+                                Collection, please contact
+                                our
+                                friendly staff for a quote.
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid how-it-works-section">
+            <div class="container">
+
+                <!-- How Does it Work Section -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-center mt-5 mb-5">
+                            <h2 class="section-heading">How does it work?
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row pb-3">
+                    <div class="col-12 col-sm-6 col-md-3 pb-5">
+                        <mat-card class="text-center steps-card">
+                            <h2 class="steps-header pt-3 pb-2">Step 1</h2>
+                            <fa-icon class="steps-icon" [icon]="faCalendarCheck"></fa-icon>
+                            <h4 class="steps-footer pt-2 pb-3">Book Collection</h4>
+                        </mat-card>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 pb-5">
+                        <mat-card class="text-center steps-card">
+                            <h2 class="steps-header pt-3 pb-2">Step 2</h2>
+                            <fa-icon class="steps-icon" [icon]="faTruck"></fa-icon>
+                            <h4 class="steps-footer pt-2 pb-3">Collection Day</h4>
+                        </mat-card>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 pb-5">
+                        <mat-card class="text-center steps-card">
+                            <h2 class="steps-header pt-3 pb-2">Step 3</h2>
+                            <fa-icon class="steps-icon" [icon]="faHdd"></fa-icon>
+                            <h4 class="steps-footer pt-2 pb-3">Data Destruction
+                            </h4>
+                        </mat-card>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 pb-5">
+                        <mat-card class="text-center steps-card">
+                            <h2 class="steps-header pt-3 pb-2">Step 4</h2>
+                            <fa-icon class="steps-icon" [icon]="faFilePdf"></fa-icon>
+                            <h4 class="steps-footer pt-2 pb-3">Receive Paperwork</h4>
+                        </mat-card>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Onsite Hard Drive Crushing Service Section -->
+        <div class="container-fluid onsite-data-destruction-section pb-3">
+            <div class="container pb-5">
+
+                <div class="row pb-5">
+                    <div class="col-12">
+                        <div class="text-center mt-5">
+                            <h2 class="shadow-text">Onsite Hard Drive Crushing</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="box">
+                            <h4 class="shadow-text">Crusher Infomation
+                            </h4>
+                            <ul>
+                                <li>
+                                    <fa-icon class="mr-2" [icon]="faAngleRight"></fa-icon>
+                                    <span class="shadow-text hdd-subtext">We can crush 3 hard drives per minute.</span>
+                                </li>
+                                <li>
+                                    <fa-icon class="mr-2" [icon]="faAngleRight"></fa-icon>
+                                    <span class="shadow-text hdd-subtext">No electricity required, which means we
+                                        can destroy the drives
+                                        anywhere onsite.</span>
+                                </li>
+                            </ul>
+                            <h4 class="pt-3 shadow-text">Prices
+                            </h4>
+                            <ul>
+                                <li>
+                                    <fa-icon class="mr-2" [icon]="faAngleRight"></fa-icon>
+                                    <span class="shadow-text hdd-subtext">£3.99 per drive (If loose.)</span>
+                                </li>
+                                <li>
+                                    <fa-icon class="mr-2" [icon]="faAngleRight"></fa-icon>
+                                    <span class="shadow-text hdd-subtext">£4.99 per drive (If the hard drive
+                                        requires removal.)</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="text-right">
+                            <video class="rounded img-fluid video" poster="assets/video-poster.png"
+                                disablePictureInPicture controlsList="nodownload" width="96%" height="96%" controls>
+                                <source src="assets/crusher-demonstration.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Previous Clients Section -->
+        <div class="container pb-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center mt-5 mb-5">
+                        <h2 class="section-heading">Previous Clients Include
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 1-->
+            <div class="row">
+                <div class="col-6 col-md-3 text-center">
+                    <img class="smaller-logo" src="assets/crystallegal_thumb.png" alt="">
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <img class="smaller-logo" src="assets/crawford_thumb.png" alt="">
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <img class="smaller-logo" src="assets/jmarchitects_thumb.png" alt="">
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <img class="smaller-logo" src="assets/telesis_thumb.png" alt="">
+                </div>
+            </div>
+
+            <!-- Row 2-->
+            <div class="row pb-5">
+                <div class="col-6 col-md-3 text-center">
+                    <img class="smaller-logo" src="assets/apprentice_thumb.png" alt="">
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <img class="smaller-logo" src="assets/axongarside_thumb.png" alt="">
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <img class="smaller-logo" src="assets/dhl_thumb.png" alt="">
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <img class="smaller-logo" src="assets/knights_thumb.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <app-footer></app-footer>
+    </div>
+</ng-container>

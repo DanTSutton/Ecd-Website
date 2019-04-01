@@ -1,0 +1,221 @@
+<ng-container>
+  <!-- Progress Bar -->
+  <div *ngIf="!isLoading" class="container-fluid pt-4 ">
+    <div class="row">
+      <div class="col-12 spinner-padding">
+        <mat-progress-bar mode="{{this.mode}}"></mat-progress-bar>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div *ngIf="isLoading" class="animated fadeIn">
+    <div class="container-fluid pt-4">
+      <div class="row pt-5">
+        <!-- Header Image -->
+        <img src="assets/cr-background.jpg" alt="Snow" style="width:100%;">
+        <!-- Main Title -->
+        <span class="animated fadeIn centered">Computer Recycling</span>
+        <fa-icon class="animated fadeIn recycling-icon" [icon]="faRecycle"></fa-icon>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 pt-5 text-center">
+          <h3 class="section-heading">Items We Collect...</h3>
+          <h6 class="sub-header">Expert Computer Disposals Ltd collect and recycle various equipment such as listed
+            below.
+          </h6>
+        </div>
+      </div>
+
+      <div class="row pt-3 pb-2">
+        <div class="col-12 col-lg-3">
+          <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title>
+                <div>
+                  <span>Computers</span>
+                </div>
+              </mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="assets/icons/computer.png" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                We collect Desktop Computers of any age and in any condition.
+              </p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+
+        <div class="col-12 col-lg-3">
+          <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title>LCD Monitors
+              </mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="assets/icons/monitor.png" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                We collect flatscreen LCD Monitors of any size or shape.
+              </p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+
+        <div class="col-12 col-lg-3">
+          <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title>Laptops</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="assets/icons/laptop.png" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                Laptops, Netbooks, MacBooks or others, we collect them all.
+              </p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+
+        <div class="col-12 col-lg-3">
+          <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title>Servers</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="assets/icons/server.png" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                We collect Desktop / Rackmount Servers, including rails.
+              </p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+
+      <div class="row pb-3">
+
+        <div class="col-12 col-lg-2 pb-5">
+          <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title>Mice
+              </mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="assets/icons/mouse2.png" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                100's of Mice in the cupboard? It's not a problem for us, we are happy to collect them. </p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+
+        <div class="col-12 col-lg-2 pb-5">
+          <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title>
+                <div>
+                  <span>Tablets</span>
+                </div>
+              </mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="assets/icons/tablet.png" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                We collect tablets or any make, model or size, including non-working or broken screens. </p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+
+        <div class="col-12 col-lg-2 pb-5">
+          <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title>Switches</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="assets/icons/router.png" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                Yep, we collect and recycle any Network related IT equipment you may have. </p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+
+        <div class="col-12 col-lg-2 pb-5">
+          <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title>Projectors</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="assets/icons/projector.png" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                Expert Computer Disposals Ltd collect and recycle both floor standing and portable projectors. </p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+
+        <div class="col-12 col-lg-2 pb-5">
+          <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title>Keyboards</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="assets/icons/keyboard.png" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                Don't worry if you have a lot of keyboards, we are happy to remove them. </p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+
+        <div class="col-12 col-lg-2 pb-5">
+          <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title>Cables</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="assets/icons/cables.png" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                Knotted Cables? We will also remove all of your used cables, even if they are all tied together. </p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+
+      </div>
+
+      <div class="row pb-5">
+        <div class="col-12 col-sm-6 pt-2 text-center">
+          <h3 class="section-heading">What happens to the Equipment?
+            ...</h3>
+          <h6 class="sub-header pt-2">
+            One of the most important factors of recycling is <strong>reuse.</strong>
+            <br />
+            <br />
+            Your recycled equipment will have the data securely erased, the
+            equipment will then be inspected, cleaned up and refurbished and if possible resent back out into the world.
+            <br />
+            <br />
+            We also supply equipment to schools / academies at a reduced expense.
+          </h6>
+          <br />
+          <br />
+          <h3 class="section-heading">Paperwork?
+            ...</h3>
+          <h6 class="sub-header pt-2">
+            Along with a great service you will receive a <strong>Waste Transfer Note</strong> for your electrical waste
+            which demonstrates
+            you have correctly disposed of your equipment.
+            <br />
+            <br />
+            If you have any items that require data erasure, you will also
+            receive a Data Destruction Certificate.
+          </h6>
+        </div>
+        <div class="col-12 col-sm-6 pt-2">
+          <img class="rounded img-fluid school-picture" src="assets/school.jpg" alt="">
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <app-footer></app-footer>
+  </div>
+</ng-container>

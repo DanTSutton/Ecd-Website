@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-lg fixed-top navbar-light" id="border">
+  <div class="container">
+    <!-- Logo Image -->
+    <a [routerLink]="['/']" routerLinkActive="router-link-active">
+      <img src="assets/logo.png" alt="">
+    </a>
+    <!-- Menu Button -->
+    <button class="navbar-toggler" type="button" (click)="toggleNavbar()" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngClass]="{ 'show': navbarOpen }">
+      <ul class="nav navbar-nav ml-auto">
+        <button mat-button class="phone-number mr-2">Call Us Today: 01625 827 677 </button>
+        <!-- About -->
+        <button [routerLink]="['/about']" routerLinkActive="router-link-active" class="mr-1" mat-button>About</button>
+
+        <button mat-button [matMenuTriggerFor]="menu">Services</button>
+        <!-- Services Dropdown Menu -->
+        <mat-menu class="mt-4" #menu="matMenu">
+
+          <!-- Computer Recycling -->
+          <button [routerLink]="['/computer-recycling']" routerLinkActive="router-link-active" mat-menu-item
+            id="popdown-menu">
+            <fa-icon [icon]="faRecycle" class="mr-2 faRecycle"></fa-icon>
+            Computer Recycling
+          </button>
+
+          <!-- Onsite HDD Crushing -->
+          <button [routerLink]="['/onsite-crushing']" routerLinkActive="router-link-active" mat-menu-item>
+            <fa-icon [icon]="faHammer" class="mr-2 faHammer"></fa-icon>
+            Onsite HDD Crushing
+          </button>
+
+          <!-- Offsite Data Wiping -->
+          <button [routerLink]="['/offsite-wiping']" routerLinkActive="router-link-active" mat-menu-item>
+            <fa-icon [icon]="faHdd" class="mr-2 faHdd"></fa-icon>
+            Offsite Data Wiping
+          </button>
+        </mat-menu>
+
+        <!-- Contact -->
+        <button [routerLink]="['/contact']" routerLinkActive="router-link-active" class="mr-2"
+          mat-button>Contact</button>
+      </ul>
+    </div>
+  </div>
+</nav>

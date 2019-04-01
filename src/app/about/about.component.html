@@ -1,0 +1,77 @@
+<ng-container>
+    <!-- Progress Bar -->
+    <div *ngIf="!isLoading" class="container-fluid pt-4 ">
+        <div class="row">
+            <div class="col-12 spinner-padding">
+                <mat-progress-bar mode="{{this.mode}}"></mat-progress-bar>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div *ngIf="isLoading" class="animated fadeIn">
+        <div class="container-fluid pt-4">
+            <div class="row pt-5">
+                <!-- Header Image -->
+                <img src="assets/aboutme-background.jpg" alt="Snow" style="width:100%;">
+                <!-- Main Title -->
+                <span class="animated fadeIn centered">About Us</span>
+                <fa-icon class="animated fadeIn header-icon" [icon]="faBuilding"></fa-icon>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-around">
+
+                <!-- Left Container -->
+                <div class="col-12 col-sm-4 pt-5 text-center">
+                    <img class="img-fluid" src="assets/lightbulb.jpg" alt="">
+                </div>
+
+                <!-- Right Container -->
+                <div class="col-12 col-sm-7 pt-5 pb-5 text-center">
+                    <h3 class="section-heading">Established</h3>
+                    <h6 class="sub-header">Expert Computer Disposals Ltd was established in May 2012, since then, we
+                        have
+                        gone
+                        on to help
+                        and assist many <strong>Businesses, Schools, Academies, Universities, Health Authorities,
+                            Solicitors,
+                            Accountants</strong> and many more in their recycling duties to make our world a cleaner and
+                        greener
+                        place to live.
+                        <br />
+                        <br />
+                        We have a legal duty to recycle electrical equipment in the correct way and consider the welfare
+                        of
+                        our
+                        future generations.
+                    </h6>
+                    <h3 class="section-heading pt-3">Landfill Policy
+                    </h3>
+                    <h6 class="sub-header">We pride ourselves in going the extra mile with helping and guiding
+                        businesses in
+                        any
+                        aspect of any electrical recycling. From the beginning we have maintained a strong commitment of
+                        a
+                        0%
+                        landfill policy.
+                    </h6>
+                    <h3 class="section-heading pt-3">Waste Carriers License
+                    </h3>
+                    <h6 class="sub-header pb-3">Expert Computer Disposals Ltd is fully licensed to carry and dispose of
+                        your
+                        IT
+                        equipment.
+                        <br />
+                        <br />
+                        <strong>Waste Carriers License No. CBDU42842</strong>
+                    </h6>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <app-footer></app-footer>
+    </div>
+</ng-container>

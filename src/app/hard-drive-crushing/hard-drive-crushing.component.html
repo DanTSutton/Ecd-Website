@@ -1,0 +1,100 @@
+<ng-container>
+      <!-- Progress Bar -->
+  <div *ngIf="!isLoading" class="container-fluid pt-4 ">
+    <div class="row">
+      <div class="col-12 spinner-padding">
+        <mat-progress-bar mode="{{this.mode}}"></mat-progress-bar>
+      </div>
+    </div>
+  </div>
+
+      <!-- Main Content -->
+  <div *ngIf="isLoading" class="animated fadeIn">
+    <div class="container-fluid pt-4">
+      <div class="row pt-5">
+        <img src="assets/onsite-background.jpg" alt="Snow" style="width:100%;">
+        <span class="animated fadeIn centered">Hard Drive Crushing</span>
+        <fa-icon class="animated fadeIn hdd-icon" [icon]="faHdd"></fa-icon>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 pt-5 text-center">
+          <h3 class="section-heading">Onsite Data Destruction</h3>
+          <h6 class="sub-header">Watch the video demonstration below to view our Onsite Hard Drive Crushing Service...
+          </h6>
+        </div>
+      </div>
+
+      <div class="row pt-4">
+        <div class="col-12 col-md-7">
+
+          <video class="rounded img-fluid video" poster="assets/video-poster.png" disablePictureInPicture
+            controlsList="nodownload" width="100%" height="100%" controls>
+            <source src="assets/crusher-demonstration.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+        </div>
+
+        <div class="col-12 col-md-5">
+
+          <div class="onsite-item-header">
+            <h4 class="items-header">Service Details
+            </h4>
+          </div>
+          <div class="onsite-item">
+            <div class="p-3">
+              <fa-icon class="onsite-item-icon mr-2" [icon]="faCheckCircle"></fa-icon>
+              <span class="items-sub-header">Crushes 3 Drives Per Minute</span>
+            </div>
+          </div>
+          <div class="onsite-item">
+            <div class="p-3">
+              <fa-icon class="onsite-item-icon mr-2" [icon]="faCheckCircle"></fa-icon>
+              <span class="items-sub-header">No electricity required
+              </span>
+            </div>
+          </div>
+          <div class="onsite-item">
+            <div class="p-3">
+              <fa-icon class="onsite-item-icon mr-2" [icon]="faCheckCircle"></fa-icon>
+              <span class="items-sub-header">Serial Numbers are scanned by a Barcode Reader</span>
+            </div>
+          </div>
+          <div class="onsite-item">
+            <div class="p-3">
+              <fa-icon class="onsite-item-icon mr-2" [icon]="faCheckCircle"></fa-icon>
+              <span class="items-sub-header">PDF Data Destruction Certificate Provided</span>
+            </div>
+          </div>
+          <div class="onsite-item">
+            <div class="p-3">
+              <fa-icon class="onsite-item-icon mr-2" [icon]="faCheckCircle"></fa-icon>
+              <span class="items-sub-header">Complete Peace Of Mind.</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row pb-5">
+        <div class="col-12 pt-5 text-center">
+          <h3 class="section-heading">Peace Of Mind</h3>
+          <h6 class="sub-header">Your data is extremely important, which means when it comes to getting rid of it
+            correctly, it needs to be of the highest priority. By choosing our Onsite Hard Drive Crushing Service, you
+            really do get complete peace of mind.
+            <br />
+            <br />
+            You can personally see your hard drives being destroyed beyond repair, and you get a Data Destruction
+            Certificate for your records.
+          </h6>
+        </div>
+      </div>
+    </div>
+    
+        <!-- Footer -->
+    <app-footer></app-footer>
+  </div>
+</ng-container>

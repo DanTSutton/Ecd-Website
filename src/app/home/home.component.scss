@@ -1,0 +1,201 @@
+$ecd-green: #007427;
+$ecd-light-grey: rgb(248, 248, 248);
+$ecd-footer: #333;
+
+
+  mat-card-title {
+    color: $ecd-green;
+    font-family: "open sans",sans-serif;
+    font-weight: bold;
+  }
+
+  .more-info-button {
+    background: $ecd-green;
+    color: white;
+  }
+
+     
+  .spinner-padding {
+    z-index: 1000;
+    padding-top: 63px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .main-image {
+    background-image: url('/assets/aboutme-background.jpg');
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    background-color: #999;
+  }
+
+
+  .main-image-text {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3vw;
+    color: white;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+  }
+
+  .wrapper {
+    height: 100%; 
+    width: 100%; 
+  }
+  
+  .message {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%; 
+    height:45%;
+    bottom: 0; 
+    display: block;
+    position: absolute;
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    padding: 0.5em;
+  }
+  
+
+  .collection-item-header {
+    background: $ecd-green;
+    border-radius: 10px 10px 0 0;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    border: solid 1px rgb(195, 195, 195);
+  }
+
+  .collection-item {
+    background: white;
+    text-align: center;
+    border-left: solid 1px rgb(195, 195, 195);
+    border-right: solid 1px rgb(195, 195, 195);
+    border-bottom: solid 1px rgb(195, 195, 195);
+
+  }
+
+  .collection-item-icon  {
+    color: $ecd-green;
+    font-size: 2rem;
+  }
+
+  .steps-icon  {
+    color: $ecd-green;
+    font-size: 3rem;
+  }
+
+
+
+.items-header {
+  color: white;
+  font-family: "open sans",sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding-top: 5px;
+}
+
+.video {
+  cursor: pointer;
+}
+
+.box {
+  background:  rgba(195, 195, 195, 0.2);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.items-sub-header {
+  color: rgb(98, 98, 98);
+  font-weight: lighter;
+  font-size: 1.24rem;
+}
+
+  .onsite-data-destruction-section {
+    background-image: url('/assets/metal-background.jpg');
+    color: white;
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+  }
+
+  .shadow-text {
+    text-shadow: rgb(0, 0, 0) 5px 5px 10px;
+  }
+
+  .hdd-subtext {
+    font-size: 1.2em;
+  }
+
+  .what-we-collection {
+    background: $ecd-light-grey;
+  }
+
+  .how-it-works-section {
+    background: white;
+  }
+
+  .smaller-logo {
+    width: 55%;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+
+  .steps-header {
+    font-family: "open sans",sans-serif;
+    color: rgb(98, 98, 98);
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  .steps-footer {
+    font-family: "open sans",sans-serif;
+    color: rgb(98, 98, 98);
+    font-size: 1.5rem;
+  }
+
+  .steps-card {
+    transition: all .2s ease-in-out;
+  }
+
+  .steps-card:hover {
+    transform: scale(1.1);  
+  }
+
+
+  .card-title {
+    color: $ecd-green;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    text-align: center;
+  }
+
+  .card-subtitle {
+    color: rgb(149, 149, 149);
+    font-size: 0.9rem;
+    font-weight: lighter;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+ 
+  
+  @media screen and (max-width: 1024px) { /* Specific to this particular image */
+    img.bg {
+      left: 50%;
+      margin-left: -512px;   /* 50% */
+    }
+
+    .main-image-text {
+      font-size: 6vw;
+    }
+  }

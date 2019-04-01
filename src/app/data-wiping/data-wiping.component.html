@@ -1,0 +1,144 @@
+<ng-container>
+  <!-- Progress Bar -->
+  <div *ngIf="!isLoading" class="container-fluid pt-4 ">
+    <div class="row">
+      <div class="col-12 spinner-padding">
+        <mat-progress-bar mode="{{this.mode}}"></mat-progress-bar>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div *ngIf="isLoading" class="animated fadeIn">
+    <div class="container-fluid pt-4">
+      <div class="row pt-5">
+        <!-- Header Image -->
+        <img src="assets/wiping-background.jpg" alt="Snow" style="width:100%;">
+        <!-- Main Title -->
+        <span class="animated fadeIn centered">Hard Drive Data Wiping</span>
+        <fa-icon class="animated fadeIn recycling-icon" [icon]="faHdd"></fa-icon>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="row pb-3 pt-3">
+        <div class="col-12 pt-5 text-center">
+          <h3 class="section-heading">Two Data Wiping Services
+          </h3>
+          <h6 class="sub-header">Expert Computer Disposals Ltd currently provides two Data Wiping Services.
+            <br />
+            See the comparisons table below to view the differences between both services.
+          </h6>
+        </div>
+
+      </div>
+
+      <div class="row pt-3">
+        <!-- Main Items -->
+        <div class="col-12 col-md-6 pb-5">
+          <div class="collection-item-header">
+            <h4 class="items-header">Complimentary Service
+
+            </h4>
+          </div>
+          <div class="collection-item">
+            <div class="text-center p-3">
+              <h5 class="items-sub-header">This Complimentary Data Wiping Service is included with all Collections.</h5>
+            </div>
+          </div>
+          <div class="collection-item">
+            <div class="text-center p-3">
+              <fa-icon class="collection-item-icon" [icon]="faCheckCircle"></fa-icon>
+              <h5 class="items-sub-header">PDF Data Destruction Certificate</h5>
+            </div>
+          </div>
+          <div class="collection-item">
+            <div class="text-center p-3">
+              <fa-icon class="not-available-icon" [icon]="faTimesCircle"></fa-icon>
+              <h5 class="items-sub-header-light">Erases data permanently from multiple HDDs/SSDs simultaneously
+              </h5>
+            </div>
+          </div>
+          <div class="collection-item">
+            <div class="text-center p-3">
+              <fa-icon class="not-available-icon" [icon]="faTimesCircle"></fa-icon>
+              <h5 class="items-sub-header-light">Compliant with all state, federal and international data privacy
+                regulations and
+                guidelines</h5>
+            </div>
+          </div>
+          <div class="collection-item">
+            <div class="text-center p-3">
+              <fa-icon class="not-available-icon" [icon]="faTimesCircle"></fa-icon>
+              <h5 class="items-sub-header-light">Provides digitally-signed Certificate of Erasure for auditing and
+                compliance</h5>
+            </div>
+          </div>
+          <div class="collection-item">
+            <div class="text-center p-3">
+              <img class="img-fluid" src="assets/ecdinhouse.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <!-- Sub Items -->
+        <div class="col-12 col-md-6 pb-5">
+          <div class="collection-item-header">
+            <h4 class="items-header">Premium Service
+
+            </h4>
+          </div>
+          <div class="collection-item">
+            <div class="text-center p-3">
+              <h5 class="items-sub-header">Call today to receive a quote for our Premium Data Wiping Service.</h5>
+            </div>
+          </div>
+          <div class="collection-item">
+            <div class="text-center p-3">
+              <fa-icon class="collection-item-icon" [icon]="faCheckCircle"></fa-icon>
+              <h5 class="items-sub-header">PDF Data Destruction Certificate</h5>
+            </div>
+          </div>
+          <div class="collection-item">
+            <div class="text-center p-3">
+              <fa-icon class="collection-item-icon" [icon]="faCheckCircle"></fa-icon>
+              <h5 class="items-sub-header">Erases data permanently from multiple HDDs/SSDs simultaneously
+              </h5>
+            </div>
+          </div>
+          <div class="collection-item">
+            <div class="text-center p-3">
+              <fa-icon class="collection-item-icon" [icon]="faCheckCircle"></fa-icon>
+              <h5 class="items-sub-header">Compliant with all state, federal and international data privacy regulations
+                and
+                guidelines</h5>
+            </div>
+          </div>
+          <div class="collection-item">
+            <div class="text-center p-3">
+              <fa-icon class="collection-item-icon" [icon]="faCheckCircle"></fa-icon>
+              <h5 class="items-sub-header">Provides digitally-signed Certificate of Erasure for auditing and compliance
+              </h5>
+            </div>
+          </div>
+          <div class="collection-item">
+            <div class="text-center p-3">
+              <img class="img-fluid" src="assets/blancco.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pb-5">
+        <div class="col-12 pt-5 text-center">
+          <h3 class="section-heading">Call Us Today On 01625 827 677 For More Information
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <app-footer></app-footer>
+  </div>
+</ng-container>

@@ -1,0 +1,58 @@
+$ecd-green: rgb(1, 133, 62);
+
+.centered {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: white;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+  }
+
+     
+  .spinner-padding {
+    z-index: 1000;
+    padding-top: 63px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .sub-header {
+    color: rgb(98, 98, 98);
+    font-weight: lighter;
+    font-size: 1.24rem;
+  }
+
+  .recycling-icon {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: white;
+  }
+
+
+  .contact-icons {
+      color: $ecd-green;
+      font-size: 1.3rem;
+  }
+
+  .email {
+      text-decoration: none;
+      color: $ecd-green;
+  }
+
+  .details {
+    color: $ecd-green;
+    font-weight: lighter;
+    font-size: 1.24rem;
+  }
+
+  .phone-number {
+    color: $ecd-green;
+    font-weight: lighter;
+    font-size: 3rem;
+  }
+

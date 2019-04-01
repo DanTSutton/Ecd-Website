@@ -1,0 +1,45 @@
+$ecd-green: rgb(1, 133, 62);
+$ecd-nav-text-color: white;
+$ecd-nav-font: 'Montserrat', sans-serif;
+
+
+.col-12 {
+    padding: 0;
+    margin: 0;
+}
+
+#border {
+    background: white;
+    color: grey;
+    border-bottom: 2px $ecd-green solid;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+button {
+    outline: none;
+}
+
+.faRecycle {
+    color: $ecd-green;
+}
+
+.faHdd {
+    color: rgb(114, 114, 114);
+}
+
+.faHammer {
+    color: rgb(114, 114, 114);
+}
+
+.phone-number {
+    color: $ecd-green;
+    font-size: 1.1rem;
+}
+
+
+@media only screen and (max-width: 800px) {
+    #popdown-menu {
+        margin-top: 18px;
+    }
+}

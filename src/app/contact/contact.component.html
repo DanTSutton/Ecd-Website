@@ -1,0 +1,68 @@
+<ng-container>
+      <!-- Progress Bar -->
+  <div *ngIf="!isLoading" class="container-fluid pt-4 ">
+    <div class="row">
+      <div class="col-12 spinner-padding">
+        <mat-progress-bar mode="{{this.mode}}"></mat-progress-bar>
+      </div>
+    </div>
+  </div>
+
+      <!-- Main Content -->
+  <div *ngIf="isLoading" class="animated fadeIn">
+    <div class="container-fluid pt-4">
+      <div class="row pt-5">
+        <img src="assets/contact-background.jpg" alt="Snow" style="width:100%;">
+        <span class="animated fadeIn centered">Contact Us</span>
+        <fa-icon class="animated fadeIn recycling-icon" [icon]="faPhone"></fa-icon>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="row justify-content-around pt-3 pb-3">
+        <div class="col-7 pt-5 pb-5">
+          <h3 class="section-heading">Contact Information...
+          </h3>
+          <h6 class="sub-header">If you would like to book our services or if you have any other questions, please call
+            us on: </h6>
+          <h2 class="phone-number">01625 827 677</h2>
+          <hr />
+          <div>
+            <fa-icon class="mr-2 contact-icons" [icon]="faEnvelope"></fa-icon><span class="details"><a class="email"
+                href="mailto: sales@expertcomputerdisposals.co.uk">enquiries@expertcomputerdisposals.co.uk</a></span>
+          </div>
+          <div>
+            <fa-icon class="mr-2 contact-icons" [icon]="faBuilding"></fa-icon><span class="details">Company No.
+              08085468</span>
+          </div>
+          <div>
+            <fa-icon class="mr-2 contact-icons" [icon]="faRecycle"></fa-icon><span class="details">Waste Carrier License
+              No.
+              CBDU42842</span>
+          </div>
+          <hr />
+          <h6 class="sub-header">Our opening and response times are: <br />
+            <strong class="details">Monday - Friday / 9.00am - 5.00pm. </strong></h6>
+          <br />
+          <h6 class="sub-header">If your enquiry falls outside of this time, we aim to contact you when we are next
+            open.
+          </h6>
+          <hr />
+          <h5 class="section-heading">Address: </h5>
+          <h6 class="sub-header">Broughton Road </h6>
+          <h6 class="sub-header">Adlington</h6>
+          <h6 class="sub-header">Macclesfield </h6>
+          <h6 class="sub-header">SK10 4ND </h6>
+          <h6 class="sub-header">United Kingdom</h6>
+        </div>
+        <div class="col-4 pt-5 pb-5">
+          <img class="img-fluid" src="assets/contact-us.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <app-footer></app-footer>
+  </div>
+</ng-container>

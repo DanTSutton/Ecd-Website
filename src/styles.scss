@@ -1,0 +1,94 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "styles-variables";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~bootstrap/scss/bootstrap.scss";
+@import '~bootstrap/scss/bootstrap-reboot';
+@import '~bootstrap/scss/bootstrap-grid';
+@import '../node_modules/animate.css/animate.css';
+
+$ecd-green: #007427;
+$ecd-light-grey: rgb(248, 248, 248);
+$ecd-footer: #333;
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+div.col-12 {
+    padding: 15px;
+    margin: 0;
+}
+
+
+.section-heading {
+    color: $ecd-green;
+    font-family: "open sans",sans-serif;
+    letter-spacing: -1px;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 46px;
+    word-break: break-word;
+}
+
+.section-heading-inverted {
+    color: white;
+    font-family: "open sans",sans-serif;
+    letter-spacing: -1px;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 46px;
+    word-break: break-word;
+  }
+
+  .centered {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: white;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+  }
+
+    
+
+  .mat-progress-bar {
+    background: rgb(211, 211, 211);
+  }
+
+  .mat-progress-bar-buffer {
+    background: rgb(209, 209, 209);
+
+  }
+
+  .mat-progress-bar-fill::after {
+      background: rgba(255, 255, 255, 0.76);
+  }
+  .mat-progress-bar-fill {
+    background: rgba(190, 190, 190, 0.76);
+}
+
+.spinner-padding {
+  z-index: 1000;
+  padding-top: 63px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.sub-header {
+  color: rgb(98, 98, 98);
+  font-weight: lighter;
+  font-size: 1.24rem;
+}
+
+.header-icon {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  color: white;
+}

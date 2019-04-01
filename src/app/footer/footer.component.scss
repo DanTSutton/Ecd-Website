@@ -1,0 +1,19 @@
+$ecd-green: #007427;
+$ecd-light-grey: rgb(248, 248, 248);
+$ecd-footer: #333;
+
+.footer-section {
+    background: $ecd-footer;
+    color: white;
+    font-weight: lighter;
+    font-size: 14px;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  a:hover {
+    color: $ecd-green;
+  }
